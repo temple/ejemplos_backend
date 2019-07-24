@@ -11,7 +11,13 @@ $var3 ="Las variables \"\$var\" y \"\$var2\" valen ".$var." y ".$var2;
 $var4 = "Las variables \"\$var\" y \"\$var2\" valen $var y $var2";
 
 // Usando NOWDOC
-
+$var6 = <<<'TEXTO'
+    La sintaxis NOWDOC y HEREDOC son aparentemente iguales
+    solo que en NOWDOC la palabra después de <<< se pone entre
+    apóstrofes.
+    Esto significa que no podremos usar referencias
+    porque las referencias funcionan solo en strings con apóstrofes
+TEXTO;
 
 // Usando HEREDOC
 $var7 = <<<TEXTO
