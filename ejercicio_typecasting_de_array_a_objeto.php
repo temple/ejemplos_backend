@@ -13,7 +13,7 @@
   $objeto = (object) $array;
 
   // Haz que la propiedad del objeto a valga true y que la propiedad b valga false
-
+  $objeto->a=true; $objeto->b=false;
   // Haz que la propiedad ultima valga valor y que la propiedad clave valga 0 
-
+  $objeto->ultima="valor"; $objeto->clave=0;
   
