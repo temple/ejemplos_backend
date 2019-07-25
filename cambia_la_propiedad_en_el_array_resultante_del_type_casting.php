@@ -9,7 +9,7 @@
 
   $variable_array = (array) $object;
   
-  $variable_array[] = "nuevo_valor";
+  $variable_array["propiedad"] = "nuevo_valor";
 
 
   var_dump([$object,$variable_array]);
