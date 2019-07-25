@@ -14,12 +14,11 @@
 
 
   // Haz que la propiedad del objeto a valga true y que la propiedad b valga false
-
-  BORRAR ESTAS LÍNEAS: No puedes usar los valores directamente, debes usar $array 
-  para cambiar los valores de $objeto
+  $objeto->a = $array["b"];
+  $objeto->b = $array["a"];
 
   // Haz que la propiedad ultima valga valor y que la propiedad clave valga 0 
-
-  BORRAR ESTAS LÍNEAS: No puedes usar los valores directamente, debes usar $array 
-  para cambiar los valores de $objeto
+  
+  $objeto->clave = $array["ultima"];
+  $objeto->ultima = $array["clave"];
   
