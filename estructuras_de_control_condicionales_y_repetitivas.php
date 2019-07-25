@@ -32,7 +32,7 @@ do{
 }while(true);
 
 // Estructura for
-for($i=0;true;i++){
+for($i=0;true;$i++){
   // nothing
 }
 
