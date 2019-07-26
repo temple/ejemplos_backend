@@ -86,6 +86,6 @@ $profe = new Evaluador(["titulo carrera","certificacion docente"], "xavi", "subi
 
 
 
-$nota_examen_final = $profe->calcularNota(); // esta llamada da un error
+//$nota_examen_final = $profe->calcularNota(); // esta llamada da un error
 // el método calcularNota es protected y no se puede usar fuera de la clase
-$nota_alumno = $profe->evaluarAlumno();
+$nota_alumno = $profe->evaluarAlumno("Musa","Backend Development",$examen_final,$practicas);
