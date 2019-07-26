@@ -54,9 +54,9 @@ class evaluador {
 	public function evaluarAlumno($alumno,$asignatura,$examen_final,$practicas) : float
 	{
 		// código que calcula la nota del alumno en la asignatura
-		$nota_examen_final = calcularNota($examen_final);
+		$nota_examen_final = $this->calcularNota($examen_final);
 		// para evaluar a un alumno necesitamos calcular la nota de su examen final
-		$nota_practicas = calcularNota($practicas);
+		$nota_practicas = $this->calcularNota($practicas);
 		// también necesitamos poder calcular la nota de sus practicas
 		$nota_asignatura = 0.7*$nota_examen_final + 0.3*$nota_practicas;
 		return $nota_asignatura;
