@@ -84,7 +84,16 @@ class evaluador {
 
 $profe = new Evaluador(["titulo carrera","certificacion docente"], "xavi", "subira" );
 
+// calcularNota($examen_final);
+// PHP Fatal error:  Uncaught Error: Call to undefined function calcularNota()
+// Esta ejecución falla porque la función calcularNota es un MÉTODO de una CLASE
+// no podemos llamarla en esta línea como si fuera una función independiente
+
+// $profe->calcularNota($examen_final);
+// PHP Fatal error:  Uncaught Error: Call to protected method evaluador::calcularNota()
+
 
 $nota_alumno = $profe->evaluarAlumno("Musa","Backend Development",$examen_final,$practicas);
+
 // PHP Fatal error:  Uncaught Error: Call to undefined function calcularNota() in /var/www/ejemplos/metodos_protected_en_oop.php:57
 
