@@ -53,10 +53,16 @@ class evaluador {
 	// Esta nota solo la sabe calcular el evaluador, que es el ESPECIALISTA en evaluar 
 	public function evaluarAlumno($alumno,$asignatura,$examen_final,$practicas) : float
 	{
-		$nota_asignatura = 5;
 		// código que calcula la nota del alumno en la asignatura
+		$nota_examen_final = calcularNota($examen_final);
+		// para evaluar a un alumno necesitamos calcular la nota de su examen final
+		$nota_practicas = calcularNota($nota_practicas);
+		// también necesitamos poder calcular la nota de sus practicas
+		$nota_asignatura = 0.7*$nota_examen_final + 0.3*$nota_practicas;
 		return $nota_asignatura;
 	}
+
+
 
 }
 
