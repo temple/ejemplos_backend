@@ -33,9 +33,31 @@ class evaluador {
 	public function __construct($requisitos,$nombre,$apellidos){
 		//Las propiedades necesarias se reciben mediante parámetros
 		
-		
+	}
 
-	} 
+	// El método certificar es una función que puede usarse sobre cualquier objeto 
+	// de esta clase.
+	public function certificarAlumno($alumno,$asignaturas,$notas): float
+	{
+	   $suma_notas = 0;
+	   foreach($notas as $nota)
+	       $suma_notas += $nota;
+
+	   $nota_final = $suma_notas / count($notas);
+
+	   return $nota_final;
+	}		
+
+	// El método evaluarAlumno es una función que consigue la nota de un alumno
+	// en una asignatura.
+	// Esta nota solo la sabe calcular el evaluador, que es el ESPECIALISTA en evaluar 
+	public function evaluarAlumno($alumno,$asignatura,$examen_final,$practicas) : float
+	{
+		$nota_asignatura = 5;
+		// código que calcula la nota del alumno en la asignatura
+		return $nota_asignatura;
+	}
+
 }
 
 //$profe_daw = new evaluador();
