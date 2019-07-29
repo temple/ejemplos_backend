@@ -2,10 +2,13 @@
 
 namespace modulo1;
 //define('modulo1\CONSTANTE',[1,2,3],true);
-//define('modulo1\CONSTANTE',[4,2,3],true);
-
 const CONSTANTE  = [1,2,3];
-const CONSTANTE  = [4,2,3];
+// define modulo1\CONSTANTE crea una constante llamada CONSTANTE dentro del namespace
+// modulo1
+// exactamente lo mismo que si usamos la instrucción de la línea 5
+// @see https://www.php.net/manual/es/language.namespaces.definition.php#90283
+
+define('modulo1\CONSTANTE',[4,2,3],true);
 /*
   La definición 2 veces de una constante da el aviso
   PHP Notice:  Constant constante already defined in /var/www/ejemplos/constantes_y_namespaces.php on line 5
