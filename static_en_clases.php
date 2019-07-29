@@ -6,9 +6,14 @@ abstract class AbstractSaluter{
 	}
 
     static protected $idioma;
+    // Es una propiedad (puede cambiar de valor) que compartirán todos los objetos.
+    // Como es una propiedad común, le ocurre los mismo que a las constantes
+    // para poder hacerle referencia podemos usar el nombre de la clase y el acceso ::
+    // o la palabra reservada self con el acceso ::
     
     static public function createSimpleSaluter(){
     	switch (self::$idioma) {
+    		// las propiedades comunes (estáticas) requieren usar el $ para no ser confundidas con constantes de clase
     	 	case 'french':
     	 		$result = new FrenchSaluter();
     	 		break;
@@ -30,5 +35,6 @@ class CatalanSaluter extends AbstractSaluter{
 }
 
 $saluter = AbstractSaluter::createSimpleSaluter();
+// las funciones estáticas no requieren crear ningún objeto y se invocan usando :: sobre la clase
 
 $saluter->salute("Armando");
