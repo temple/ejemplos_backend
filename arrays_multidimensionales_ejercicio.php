@@ -15,3 +15,11 @@ $array_externo[] = $array_interno;
 
 // Consigue que se imprima el número 6
 print($array_externo[/*pon la clave*/][/*pon la clave*/]);
+
+$array_externo = ["a"=>0,"hello"=>1,"p"=>2,3];
+$array_interno = ["path"=>5, "uri"=> 6,7,8];
+$array_externo["routes"] = $array_interno;
+
+
+// Consigue que se imprima el número 6
+print($array_externo[/*pon la clave*/][/*pon la clave*/]);
